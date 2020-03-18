@@ -117,19 +117,19 @@ background-size: 115%;
 	background-size: 125%;
 }
 #image1:hover{
-	background-image: url("/PortfolioMedia/Lensflareon.gif");
+	background-image: url("/PortfolioMedia/LensflareonStill.png");
 }
 #image2:hover{
-	background-image: url("/PortfolioMedia/AuctionGif.gif");
+	background-image: url("/PortfolioMedia/AuctionStill.png");
 }
 #image3:hover{
-	background-image: url("/PortfolioMedia/AlbumPageGif.gif");
+	background-image: url("/PortfolioMedia/AlbumPageStill.png");
 }
 #image4:hover{
-	background-image: url("/PortfolioMedia/LoanDataGif.gif");
+	background-image: url("/PortfolioMedia/LoanDataStill.png");
 }
 #image5:hover{
-	background-image: url("/PortfolioMedia/BitcoinDataGif.gif");
+	background-image: url("/PortfolioMedia/BitcoinDataStill.png");
 }
 
 .imgtext {
