@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lensflareon</title>
+	<link rel = "stylesheet" href="lensflareon.css">
+	<link rel = "stylesheet" href="../GoBackToMainPage.css">
+	<script type = "text/javascript" src="lensflareon.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chathura">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dhurjati">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+	<body>
+		<div id="header">
+			<ul class="topNav">
+				<li>
+					<a id="homeNav" class="rightNav" href="lensflareon.html" ><p class="home" >Home</p></a>
+				</li>
+				<li>
+					<a class="rightNav border" href="contact.html"><p class="contact">Contact</p></a>
+				</li>
+				<li>
+					<a class="rightNav" href="prints.html" style="border-left: 0px;" ><p class="prints">Prints</p></a>
+				</li>
+
+					<a class="headerLink border" href="lensflareon.html"><li class="leftNav" style="float:left"></li></a>
+
+			</ul>
+		</div>
+
+
+		<div id=caption1 class="centeredCaption">
+			<p>Bombus ternarius, commonly known as the orange-belted bumblebee or tricoloured bumblebee, is a yellow, orange and black bumblebee. It is a ground-nesting social insect whose colony cycle lasts only one season.</p>
+		</div>
+
+		<div id=caption2 class="centeredCaption">
+			<p>These utterflies are insects in the macrolepidopteran clade Rhopalocera from the order Lepidoptera, which also includes moths. The adult butterflies have large, often brightly coloured wings, and conspicuous, fluttering flight.</p>
+		</div>
+
+		<div id=caption3 class="centeredCaption">
+			<p>Georgian boats are watercraft of a large range of types and sizes, but generally smaller than a ship, which is distinguished by its larger size, shape, cargo or passenger capacity, or its ability to carry boats. The boats are vital to the Georgian economy and ecosystem.</p>
+		</div>
+
+		<div id=caption4 class="centeredCaption">
+			<p>To produce fuel, it takes about 1 to 2.5 gallons of water for every gallon of product.The United States, consumes about 1 to 2 billion gallons of water. That's a lot of water but it's less than the amount of water china consumes. </p>
+		</div>
+
+		<div id=caption5 class="centeredCaption">
+			<p>Earth is 4.5 billion years old, and plants may have colonized land as recently as 470 million years ago, most likely mosses and liverworts without deep roots. Plants are the main contributors in the fight against global warming.</p>
+		</div>
+
+
+		<div class="wrapper"> 
+			<div id="Slide">
+				<div class="imageContainer">
+					<div id="image0"></div>
+					<div id="image1"></div>
+					<div id="image2"></div>
+					<div id="image3"></div>
+					<div id="image4"></div>
+					<div id="image5"></div>
+
+				</div>
+
+				<div class="navBarContainer">
+					<div class="navBar">  
+						<ul>
+							<a id="link1" class="navBarLink">Bombus Ternarius</a>
+							<!--<img src="Boat.jpg">-->
+						</ul>
+						<ul>
+							<a id="link2" class="navBarLink">Latin American Moths</a>
+							<!--<img src="Bee.jpg">-->
+						</ul>
+						<ul>
+							<a id="link3" class="navBarLink">Georgian Boats</a>
+							<!--<img src="Butterfly.jpg">-->
+						</ul>
+						<ul>
+							<a id="link4" class="navBarLink">Water</a>
+							<!--<img src="Flowertree.jpg">-->
+						</ul>
+						<ul>
+							<a id="link5" class="navBarLink">Trees</a>
+							<!--<img src="Droplet.jpg">-->
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div id="imageDescription">
+				<p>The Himalayas, or Himalaya is a mountain range in Asia separating the plains of the Indian subcontinent from the Tibetan Plateau. The range has many of Earth's highest peaks, including the highest, Mount Everest (Nepal/China).</p>
+			</div>
+
+		</div>
+		<div class="returnToMainPage">
+			<a href="index.html"><p>Return to Main Page</p></a>
+		</div>
+
+		<script>
+			var imgdescription = document.getElementById("imageDescription");
+			var link1 = document.getElementById("link1");
+			var image1= document.getElementById("image1");
+			var link2 = document.getElementById("link2");
+			var image2= document.getElementById("image2");
+			var link3 = document.getElementById("link3");
+			var image3= document.getElementById("image3");
+			var link4 = document.getElementById("link4");
+			var image4= document.getElementById("image4");
+			var link5 = document.getElementById("link5");
+			var image5= document.getElementById("image5");
+			var caption1 = document.getElementById("caption1");
+			var caption2 = document.getElementById("caption2");
+			var caption3 = document.getElementById("caption3");
+			var caption4 = document.getElementById("caption4");
+			var caption5 = document.getElementById("caption5");
+
+			link1.addEventListener("mouseover", function(){
+				image1.style.visibility="visible";
+				imgdescription.style.visibility="hidden";
+				caption1.style.visibility="visible";
+			});
+			link1.addEventListener("mouseout",function(){
+				image1.style.visibility="hidden";
+				imgdescription.style.visibility="visible";
+				caption1.style.visibility="hidden";
+			});
+			link2.addEventListener("mouseover", function(){
+				image2.style.visibility="visible";
+				imgdescription.style.visibility="hidden";
+				caption2.style.visibility="visible";
+			});
+			link2.addEventListener("mouseout",function(){
+				image2.style.visibility="hidden";
+				imgdescription.style.visibility="visible";
+				caption2.style.visibility="hidden";
+			});
+			link3.addEventListener("mouseover", function(){
+				image3.style.visibility="visible";
+				imgdescription.style.visibility="hidden";
+				caption3.style.visibility="visible";
+			});
+			link3.addEventListener("mouseout",function(){
+				image3.style.visibility="hidden";
+				imgdescription.style.visibility="visible";
+				caption3.style.visibility="hidden";
+			});
+			link4.addEventListener("mouseover", function(){
+				image4.style.visibility="visible";
+				imgdescription.style.visibility="hidden";
+				caption4.style.visibility="visible";
+			});
+			link4.addEventListener("mouseout",function(){
+				image4.style.visibility="hidden";
+				imgdescription.style.visibility="visible";
+				caption4.style.visibility="hidden";
+			});
+			link5.addEventListener("mouseover", function(){
+			image5.style.visibility="visible";
+				imgdescription.style.visibility="hidden";
+				caption5.style.visibility="visible";
+			});
+			link5.addEventListener("mouseout",function(){
+				image5.style.visibility="hidden";
+				imgdescription.style.visibility="visible";
+				caption5.style.visibility="hidden";
+			});
+		</script>
+	</body>
+</html>

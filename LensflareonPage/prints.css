@@ -1,0 +1,343 @@
+*{
+	padding:0;
+	margin:0;
+	
+}
+/*/////////////////////////////////////////////////////////
+////////////////----Heading-----////////////////////////
+///////////////////////////////////////////////////////////*/
+.topNav{
+	list-style-type: none;
+	background-color: white;
+	margin:0;
+	padding:0;
+	border-bottom: solid 2px red;
+	height:49px;
+	overflow: hidden;
+}
+
+
+.rightNav{
+	display: block;
+	color: black;
+	font-family: Dhurjati;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding:6px;
+	margin:0;
+	border-left: 2px solid red;
+	float:right;
+    
+}
+.rightNav:last-child{
+	
+}
+.rightNav:hover{
+	cursor:pointer;
+}
+.rightNav:hover{
+	background-color: #8c5034;
+	
+}
+
+
+.contact{
+	padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,orange, red);*/
+    background:orange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home{
+    padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,red, gold);*/
+    background:red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+.prints{
+
+	padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,yellow, orange);*/
+    background:#f9f86b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftNav{
+	display: block;
+	padding:0;
+	margin:0;
+	margin-left: 10px;
+	border:0;
+	background-image: url("Lensflareon.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:156px;
+	height:60px;
+}
+.leftNav:hover{
+	cursor:pointer;
+}
+
+.headerLink{
+
+	color:white;
+	padding:0;
+	margin:0;
+	border:0;
+	
+	}
+
+.headerImg{
+
+	padding-left: 10px;
+	height:49px;
+}
+@media only screen and (max-width: 360px){
+	.navBarLink{
+		width:200%;
+	}
+	.navBarLink:hover{
+		width:450%;
+	}
+	.leftNav{
+		display:none;
+	}
+	.headerLink{
+		display:none;
+	}
+	.topNav{
+		display:flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-direction: row-reverse;
+		width:100%;
+	
+	}
+	.topNav li{
+		display:block;
+	}
+	.rightNav{
+		border:none;
+	}
+	.border{
+		border:2px solid red;
+		border-bottom: none;
+		border-top: none;
+	}
+	.printsBdr{
+		border-left: 2px solid red;
+	}
+	#shoppingCart{
+		float:left;
+	}
+	
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+#shoppingCart{
+	color:springgreen;
+	
+}
+
+#shoppingCart:last-child{
+	border:none;
+	color: -webkit-linear-gradient(left, red , blue);
+}
+#counter{
+	float:right;
+	padding-left: 4px;
+	border:none;
+	
+	
+}
+
+#shoppingCart:hover{
+	color:mediumspringgreen;
+	
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+
+
+.printHolder{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	
+}
+.printItem{
+	
+	background-color: antiquewhite;
+	margin:5px;
+	padding:5px;
+	text-align: center;
+	width:260px;
+		position:relative;
+
+	
+
+}
+.printItemContents{
+	height:320px;
+	width:250px;
+	text-align: center;
+	margin: auto;
+	padding:5px;
+	
+}
+imgHolder{
+	width:500px;
+	height:700px;
+}
+.itemImg{
+	max-width:100%;
+max-height:100%;
+
+}
+.itemTitle{
+	background-color: #5b3523;
+	color:white;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	
+	
+}
+.itemPrice{
+	background-color: #8c5034;
+	color:white;
+	text-align: right;
+	padding:5px;
+	margin-bottom: 2px;
+}
+.year{
+	margin-top: 2px;
+}
+.itemDesc1, .itemDesc2, .itemDesc3, .itemDesc4, .itemDesc5{
+	background-color: #ae6e50;
+	color: white;
+	height:140px;
+	padding-bottom: 15px;
+	font-family: 'Roboto Condensed' ;
+	padding:10px;
+	padding-top: 0;
+}
+
+
+.itemDescH1, .itemDescH2, .itemDescH3, .itemDescH4, .itemDescH5{
+	background-color: #ae6e50;
+	height: auto;
+	color:white;
+	padding-bottom: 15px;
+	font-family: 'Roboto Condensed' ;
+	padding:10px;
+	padding-top: 0;
+}
+.picInfo{
+	background-color: #8c5034;
+	color:white;
+	text-align: right;
+	padding:0;
+	padding-right: 5px;
+	font-family: 'Roboto Condensed' ;
+}			
+.cartBtn{
+	width:100%;
+	padding:5px;
+	padding-right: 100px;
+	padding-left: 90px;
+	margin-top: 3px;
+	background-color:white;
+	white-space: nowrap;
+	font-family: 'Roboto Condensed' ;
+	background-color: antiquewhite;
+}
+.cartBtn:hover{
+	cursor: pointer;
+	background-color: springgreen;
+	
+}
+.readMoreBackground, .readMoreBackground1, .readMoreBackground2, .readMoreBackground3, .readMoreBackground4, .readMoreBackground5{
+	width:81.5%;
+	bottom:37px;
+	position:absolute;
+	padding:20px;
+	background: -webkit-linear-gradient(rgba(174, 110, 80, .0)1%,rgba(174, 110, 80, 1)40%);
+}
+.readLessBackground1, .readLessBackground2, .readLessBackground3, .readLessBackground4, .readLessBackground5{
+	width:84.7%;
+	bottom:37px;
+	position:static;
+	padding:20px;
+	padding-top: 0;
+	padding-bottom: 5px;
+	background: rgba(174, 110, 80, 1);
+}
+.readMoreButton1, .readMoreButton2, .readMoreButton3, .readMoreButton4, .readMoreButton5{
+	color:white;
+	margin:0px;
+	font-size: 17px;
+	background:none;
+    border:none;
+    margin:0;
+    padding:0px;
+    cursor: pointer;
+	font-family: 'Roboto Condensed';
+}
+.hiddenTxt1, .hiddenTxt2, .hiddenTxt4{
+	display:none;
+}
+.visibleTxt1, .visibleTxt2, .visibleTxt4{
+	display:block;
+}
+/*///////////////////////////////////////////////////////////////////////////*/
+
+#shoppingListContainer{
+	background-color: lawngreen;
+	width:200px;
+	display:none;
+}
+#shoppingListContainer i{
+	position:absolute;
+	 right:0px;
+	padding:5px;
+	
+}
+#shoppingListContainer i:hover{
+	cursor: pointer;
+}
+#shoppingListContainer h1{
+	margin-top: 15px;
+}
+#shoppingList{
+	position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	background-color: beige;
+	border:solid white 5px;
+	padding:5px;
+}
+
+#shoppingList li{
+	list-style-type: none;
+	text-align: center;
+	color:white;
+	padding:5px;
+		margin:5px;
+	background-color: #8c5034 ;
+}
+
+#shoppingList li:hover{
+	cursor: pointer;
+}
+
+

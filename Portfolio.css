@@ -1,0 +1,328 @@
+*{
+	margin:0px;
+	padding:0px;
+	
+	
+}
+body{
+	background-color: black;
+}
+.intro{
+	position:relative;
+	text-align: center;
+	height:500px;
+	width:100%;
+	background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.0),rgba(245, 246, 252, 0.0),rgba(245, 246, 252, 0.0), rgba(0, 0, 0, 1)), url(https://wallpaperaccess.com/full/38580.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	
+}
+h2{
+	font-size: 40px;
+}
+h5{
+	font-size: 20px;
+}
+.intro i{
+	float:right;
+	padding:0px;
+	margin:10px;
+}
+.socials{
+	width:100%;
+	
+	height:30px;
+}
+.socialLinks{
+	text-decoration: none;
+	color:white;
+	
+}
+.socialLinks:hover{
+	color:#d59839;
+	
+}
+.headingContainer{
+	
+	position:absolute;
+	width: 100%;
+	text-align: center;
+	bottom:40%;
+}
+.portfolioLinkContainer{
+	display:flex;
+	align-content: stretch;
+	justify-content: center;
+	flex-flow: row wrap;
+	text-align: center;
+	
+}
+.portfolioLinkContainer a:hover{
+	text-decoration: underline;
+}
+
+.portfolioLinkItem{
+	position:relative;
+	
+	margin:10px;
+	width:200px;
+	height:200px;
+	background-color: aquamarine;
+	transition-duration: .3s;
+	background-position: center;
+	overflow:hidden;
+}
+.portfolioLinkItem i{
+	margin:0;
+	padding-left:5px;
+	
+}
+.midHeading{
+align-content: center;
+	text-align: center;
+	margin:auto;
+	color:white;
+	background-color: #5c80a7cc;
+	width:50%;
+}
+.portfolioLinkContainer a{
+	color:white;
+	text-decoration: none;
+}
+
+#image1{
+	background-image: url("/PortfolioMedia/LensflareonStill.png");
+background-size: 115%;	
+}
+#image2{
+	background-image: url("/PortfolioMedia/AuctionStill.png");
+	background-size: 115%;
+}
+#image3{
+	background-image: url("/PortfolioMedia/AlbumPageStill.png");
+		background-size: 100%;
+}
+#image4{
+	background-image: url("/PortfolioMedia/LoanDataStill.png");
+background-size: 115%;	
+}
+#image5{
+	background-image: url("/PortfolioMedia/BitcoinDataStill.png");
+	background-size: 115%;
+}
+#image1:hover, #image2:hover, #image3:hover, #image4:hover, #image5:hover{
+	
+	background-size: 125%;
+}
+#image1:hover{
+	background-image: url("/PortfolioMedia/Lensflareon.gif");
+}
+#image2:hover{
+	background-image: url("/PortfolioMedia/AuctionGif.gif");
+}
+#image3:hover{
+	background-image: url("/PortfolioMedia/AlbumPageGif.gif");
+}
+#image4:hover{
+	background-image: url("/PortfolioMedia/LoanDataGif.gif");
+}
+#image5:hover{
+	background-image: url("/PortfolioMedia/BitcoinDataGif.gif");
+}
+
+.imgtext {
+	
+	font-size: 25px;
+	color: white;
+    position: absolute;
+	padding-left: 5px;
+	padding-top: 5px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    text-align: left;    
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,1));
+    transition: height 0.25s ;  
+	transition-delay: .10s;
+
+}
+.imgtext2 {
+	
+	color: white;
+    position: absolute;
+	padding-left: 5px;
+	padding-top: 5px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    text-align: left;    
+    background: rgba(0,0,0,0);
+    transition: height 0.2s ;  
+	transition-delay: .30s;
+	
+}
+.imgtext3 {
+	
+	color: white;
+    position: absolute;
+	padding-left: 5px;
+	padding-top: 5px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 0px;
+    text-align: left;    
+    background: rgba(0,0,0,0);
+    transition: height 0.3s ;  
+	transition-delay: .35s ;
+}
+.portfolioLinkItem:hover > .imgtext {
+    height: 76px;
+}
+.portfolioLinkItem:hover > .imgtext2 {
+    height: 50px;
+}
+.portfolioLinkItem:hover > .imgtext3 {
+    height: 30px;
+}
+#button{
+	background-color: #5c80a7cc;
+	color:white;
+	bottom:20px;
+	margin-right:30px;
+	padding:10px 50px ;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	float:right;
+
+}
+
+#button:hover{
+	
+	
+	background-color: #5c80a7;
+}
+
+* {box-sizing: border-box;}
+
+.submitExit{
+	float:right;
+	padding:0px;
+	margin:0px;
+	text-align: center;
+}
+.submitExit i{
+	color:darkgray;
+	padding:0px;
+	margin-bottom: 4px;
+	margin:0px;
+	transition: .5s;
+}
+.submitExit i:hover{
+	cursor: pointer;
+	transform:rotate(90deg);
+	transition: .5s;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #547496;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #6b8eb5;
+}
+#containerWrapper{
+	
+}
+#container {
+	
+	position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+
+	margin: 0 auto;
+	width:40%;
+  max-width:400px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+	display:none;
+}
+.helpingTxt{
+	padding:0;
+	margin:0;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	color:red;
+	font-size: 12px;
+	
+}
+#fNameHelp{
+	visibility:hidden;
+	
+}
+#lNameHelp{
+	visibility:hidden;
+	
+}
+
+#emailHelp{
+	visibility:hidden;
+	
+}
+.copyright{
+	
+	text-align: center;
+	color:white;
+	margin-top: 50px;
+	padding-bottom: 2px;
+	background-color:#5c80a7cc;
+	overflow: 
+}
+@media only screen and (max-width: 456px) {
+#floatingContactButton{
+	margin: auto;
+	text-align: center;
+	width:100%;
+}
+#button{
+	float:none;
+	background-color: #5c80a7cc;
+	color:white;
+	bottom:20px;
+	padding:10px 50px ;
+	margin-right: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+
+}
+#container{
+width:100%;
+	}
+}

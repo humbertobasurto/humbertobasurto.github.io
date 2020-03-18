@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lensflareon</title>
+	
+	<script type = "text/javascript" src="lensflareon.js"></script>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Chathura">
+			<link rel = "stylesheet" href="../GoBackToMainPage.css">
+
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Dhurjati">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="prints.css">
+	<script src="https://kit.fontawesome.com/4a57944f16.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+          
+</head>
+	<body>
+	
+<div>
+	<ul class="topNav">
+		<li>
+			<a class="rightNav" href="lensflareon.html"><p class="home">Home</p></a>
+		</li>
+		<li>
+			
+			<a class="rightNav border" href="contact.html"><p class="contact">Contact</p></a>
+		</li>
+		<li>
+			<a class="rightNav printsBdr" href="prints.html"><p class="prints">Prints</p></a>
+		</li>
+		
+		<li>
+			
+			<a class="rightNav" id="shoppingCart"><i class="fas fa-shopping-cart fa-sm"><p id="counter">0</p></i></a>
+			
+		</li>
+		
+		
+			<a class = "leftNav" href="lensflareon.html"></a>
+		
+	</ul>
+</div>
+
+		
+<div class="printHolder">
+	<div class="printItem">
+		<div class="printItemContents">
+		<img class="itemImg" src="https://images.pexels.com/photos/1585325/pexels-photo-1585325.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ></div>	
+		<h1 class="itemTitle">Warm Reverance</h1>
+		<p class="picInfo year">2019</p>
+		<p class="picInfo">Oil on gauche</p>
+		<p class="itemPrice">$350.00</p>
+		<div class="textColor">
+		<p class="itemDesc1">This work is a destructive, sociological set of larger-than-life insects consisting of wearable technology which is reminiscent of invented spaces.The work deploys personal possessions as rearing up to <span class="hiddenTxt1">tower over the viewer.</span></p></div>
+		<div class="readMoreBackground1">
+		<button onclick="innerText1()" id="readMoreButton1" class="readMoreButton1" >Read more...</button>
+		</div>
+		<button class="cartBtn" id="0">Add to cart</button>
+	</div>
+	<div class="printItem">
+		<div class="printItemContents">
+		<img class="itemImg" src="https://images.pexels.com/photos/1572386/pexels-photo-1572386.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ></div>	
+		<h1 class="itemTitle">Cold and Desolate</h1>
+		<p class="picInfo year" >2017</p>
+		<p class="picInfo">Oil on gauche</p>
+		<p class="itemPrice">$550.00</p>
+		<p class="itemDesc2">This work is a part landscape, part abstraction, interactive collected and manipulated images consisting of drawings and collages which is reminiscent of the mechanism that initiates the firing sequence of a <span class="hiddenTxt2">gun.The work deploys experimental geography as an allegorical figure for today’s political climate.</span></p><div class="readMoreBackground2">
+		<button onclick="innerText2()" id="readMoreButton2" class="readMoreButton2">Read more...</button>
+		</div>
+		<button class="cartBtn" id="1">Add to cart</button>
+	</div>
+	<div class="printItem">
+		<div class="printItemContents">
+		<img class="itemImg" src="https://images.pexels.com/photos/1451474/pexels-photo-1451474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ></div>	
+		<h1 class="itemTitle">Marbled Dreams</h1>
+		<p class="picInfo year">2016</p>
+		<p class="picInfo">Ink on Marble</p>
+		<p class="itemPrice">$255.00</p>
+		<p class="itemDesc3">l’oeil site-specific installation consisting of concrete realities which is reminiscent of bodily anxiety.The work deploys expressions of desire and biological instinct as the struggle to communicate.</p><div class="readMoreBackground3">
+		<button onclick="innerText3()" id="readMoreButton3" class="readMoreButton3">Read more...</button>
+		</div>
+		<button class="cartBtn" id="2">Add to cart...</button>
+	</div>
+	<div class="printItem">
+		<div class="printItemContents">
+		<img class="itemImg" src="https://images.pexels.com/photos/2110951/pexels-photo-2110951.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" ></div>	
+		<h1 class="itemTitle">Winter Chill</h1>
+		<p class="picInfo year">2018</p>
+		<p class="picInfo">Digital</p>
+		<p class="itemPrice">$520.00</p>
+		<p class="itemDesc4">This work is a minimal, biomorphic handmade sculpture of furniture and other everyday objects consisting of an unsettling dance of seduction, power, trust, tenderness, loss, and betrayal which is reminiscent of an <span class="hiddenTxt4">awareness about how ethnography is embedded in place in a way that the homogenized metropli of the First World never allowed you to perceive.The work deploys violence as a rupture or distortion as a way to question who can enter and leave the country freely.</span>
+
+</p>	<div class="readMoreBackground4">
+		<button onclick="innerText4()" id="readMoreButton4" class="readMoreButton4">Read more...</button>
+		</div>
+		<button class="cartBtn" id="3">Add to cart</button>
+	</div>
+	
+</div>	
+		
+		<div id="shoppingListContainer">
+			<ul id="shoppingList">
+				<i id="i" class="fas fa-times fa-lg"></i>
+				<h1>Shopping List</h1>
+				
+				
+			</ul>
+			<p >view all items</p>
+		</div>
+		
+		<div class="returnToMainPage">
+		<a href="index.html"><p>Return to Main Page</p></a>
+		
+		</div>
+		
+		<script>
+			
+			var counterHtml = document.getElementById("counter");
+			var cartBtn = document.getElementsByClassName("cartBtn");
+			var itemTitle=document.getElementsByClassName("itemTitle");
+			var itemPrice=document.getElementsByClassName("itemPrice");
+			var shoppingList=document.getElementById("shoppingList");
+			var exitCart=document.getElementById("i");
+			var shoppingListContainer=document.getElementById("shoppingListContainer");
+			var shoppingCart=document.getElementById("shoppingCart");
+			
+			var itemAmt = 0;
+			
+			function addItem(){
+				itemAmt+=1;
+				counterHtml.innerHTML=itemAmt;
+			}
+			
+			function addListItem(){
+				$(document.body).on('click', 'button', function(){
+					var currentID = this.id;
+					shoppingList.innerHTML+=
+						"<li>"+ itemTitle[currentID].innerHTML +"   "+ itemPrice[currentID].innerHTML+"</li>";
+				})
+			}
+			
+		shoppingCart.addEventListener("click", function(){
+			shoppingListContainer.style.display="block";
+		})
+			
+				
+			
+			
+			for(var i=0; i<cartBtn.length;i++){
+				cartBtn[i].addEventListener("click", addItem, false);
+			};
+			
+			function innerText1(){
+				var x = document.getElementById("readMoreButton1");
+				if(x.innerHTML =="Read more..."){
+					x.innerHTML = "Read less"
+				}else{
+					x.innerHTML = "Read more..."
+				}
+			}
+			function innerText2(){
+				var x = document.getElementById("readMoreButton2");
+				if(x.innerHTML =="Read more..."){
+					x.innerHTML = "Read less"
+				}else{
+					x.innerHTML = "Read more..."
+				}
+			}
+			function innerText3(){
+				var x = document.getElementById("readMoreButton3");
+				if(x.innerHTML =="Read more..."){
+					x.innerHTML = "Read less"
+				}else{
+					x.innerHTML = "Read more..."
+				}
+			}
+			function innerText4(){
+				var x = document.getElementById("readMoreButton4");
+				if(x.innerHTML =="Read more..."){
+					x.innerHTML = "Read less"
+				}else{
+					x.innerHTML = "Read more..."
+				}
+			}
+			$('.readMoreButton1').click(function readMoreFunction(e){
+				$('.readMoreBackground1').toggleClass("readLessBackground1");
+				$('.itemDesc1').toggleClass("itemDescH1");
+				$('.hiddenTxt1').toggleClass("visibleTxt1");
+
+				/*
+				if($('.readMoreButton1').html == "Read more..."){
+				$('.readMoreButton1').html("Read Less")}else{
+					('.readMoreButton1').html("Read more...")*/
+				})
+			$('.readMoreButton2').click(function readMoreFunction(e){
+				e.stopPropagation();
+				$('.readMoreBackground2').toggleClass("readLessBackground2");
+				$('.itemDesc2').toggleClass("itemDescH2");
+								$('.hiddenTxt2').toggleClass("visibleTxt2");
+
+			});
+			$('.readMoreButton3').click(function readMoreFunction(e){
+				e.stopPropagation();
+				$('.readMoreBackground3').toggleClass("readLessBackground3");
+				$('.itemDesc3').toggleClass("itemDescH3");
+			});
+			$('.readMoreButton4').click(function readMoreFunction(e){
+				e.stopPropagation();
+				$('.readMoreBackground4').toggleClass("readLessBackground4");
+				$('.itemDesc4').toggleClass("itemDescH4");
+				$('.hiddenTxt4').toggleClass("visibleTxt4");
+			});
+			$('.readMoreButton5').click(function readMoreFunction(e){
+				e.stopPropagation();
+				$('.readMoreBackground5').toggleClass("readLessBackground5");
+				
+			});
+				
+					
+			addListItem();
+	
+			
+			
+			exitCart.addEventListener("click", function(){
+				shoppingListContainer.style.display="none";
+			})
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

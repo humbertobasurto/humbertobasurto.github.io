@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="AuctionMainCss.css">
+		<link rel = "stylesheet" href="../GoBackToMainPage.css">
+		<link rel="stylesheet" href="Fees.css">
+		<link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display|Teko&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	</head>
+	
+	<body>
+		<div id="topHeading">
+			<div class="header">
+				<h3 class="headerInfo" id="phoneNumber">316-111-1111</h3>
+				<h3 class="headerInfo" id="address"><a href="LocationHours.html#map" style="text-decoration: none; color:#154f2a">1234 E. Street</a></h3>
+				<img id="logo" src="WinnipegLogo.png">
+			</div>
+			
+			<h1>Winnipeg Auto Auction</h1>
+
+			<div class="headerNavBar">
+				<ul>
+					<a href="Auction.html">
+						<li  class="notActive" class="subText">Public Auction Info</li>
+					</a>
+					<a href="WeeklyList.html">
+						<li class="notActive" class="subText">Weekly Run List</li>
+					</a>
+					<a href="Contact.html">
+						<li class="notActive" class="subText">Contact Us</li>
+					</a>
+					<a href="LocationHours.html">
+						<li class="notActive" class="subText">Location & Hours</li>
+					</a>
+					<a href="Fees.html" >
+						<li class="active" class="subText">Fees</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		
+		<h1>BUYER AND SELLER FEES</h1>
+		<hr>
+		
+		<div class="tables">
+			<div class="table1Holder">
+			<h2>BUYING FEES</h2>
+				<div class="table1">
+					<table>
+						<tr>
+							<th class="columnTitle">Sale Price</th>
+							<th class="columnTitle">Buying Fee</th>
+						</tr>
+						<tr class="tableData">
+							<td>$1-99</td>
+							<td>$125</td>
+						</tr>
+						<tr class="tableData">
+							<td>$1000-2999</td>
+							<td>$150</td>
+						</tr>
+						<tr class="tableData">
+							<td>$3000-4999</td>
+							<td>$175</td>
+						</tr>
+						<tr class="tableData">
+							<td>$5000-9999</td>
+							<td>$200</td>
+						</tr>
+						<tr class="tableData">
+							<td>$10000-13499</td>
+							<td>$225</td>
+						</tr>
+						<tr class="tableData">
+							<td>$13500-15499</td>
+							<td>$275</td>
+						</tr>
+						<tr class="tableData">
+							<td>$15500-17500</td>
+							<td>$300</td>
+						</tr>
+						<tr class="tableData">
+							<td>$17500 & up</td>
+							<td>$$325</td>
+						</tr>
+						<tr class="tableData">
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="table2Holder">
+				<h2>SELLING FEES</h2>
+				<div class="table2">
+					<table>
+						<tr>
+							<th class="columnTitle">Sale Price</th>
+							<th class="columnTitle">Buying Fee</th>
+						</tr>
+						<tr class="tableData">
+							<td>under $200</td>
+							<td>$80</td>
+						</tr>
+						<tr class="tableData">
+							<td>$201-499</td>
+							<td>$100</td>
+						</tr>
+						<tr class="tableData">
+							<td>$500-999</td>
+							<td>$110</td>
+						</tr>
+						<tr class="tableData">
+							<td>$1000-199</td>
+							<td>$120</td>
+						</tr>
+						<tr class="tableData">
+							<td>$2000-2999</td>
+							<td>$140</td>
+						</tr>
+						<tr class="tableData">
+							<td>$3000-3999</td>
+							<td>$150</td>
+						</tr>
+						<tr class="tableData">
+							<td>$4000-4999</td>
+							<td>$170</td>
+						</tr>
+						<tr class="tableData">
+							<td>$5000-9999</td>
+							<td>$190</td>
+						</tr>
+						<tr class="tableData">
+							<td>$10000 & up</td>
+							<td>$210</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		
+		
+		</div>
+		
+		
+		<div id="footer">
+			<div class="bottomBanner">
+				<img id="facebookLike"style="float:left" src="likeUsFB.png">
+				<div class="footerTxt">
+					<p>Winnipeg Auto Auction</p>
+					<p>The only public auction in Winnipeg</p>
+					<p>© 2019 created by Lensflareon</p>
+				</div>
+			</div>
+		</div>
+		<div class="returnToMainPage">
+			<a href="index.html">
+				<p>Return to Main Page</p>
+			</a>
+		</div>
+		<script>
+			$("#header").load("Auction.html #topHeading");
+			$("#footer").load("Auction.html #footer");
+		</script>
+	</body>
+</html>

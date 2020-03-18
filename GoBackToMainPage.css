@@ -1,0 +1,23 @@
+.returnToMainPage p{
+	color:white;
+	position:fixed;
+	right:20px;
+	bottom:20px;
+	background-color: #547496;
+	border:solid 2px white;
+	transition: .3s;
+	padding:10px;
+	padding-left: 4px;
+	padding-right: 4px;
+	font:400 13.3333px Arial;
+	border-radius: 4px;
+}
+.returnToMainPage p:hover{
+	transition: .3s;
+	background-color: #6b8eb5;
+	border:solid 2px #6b8eb5;
+}
+.returnToMainPage a{
+color:white;
+	text-decoration: none;
+}

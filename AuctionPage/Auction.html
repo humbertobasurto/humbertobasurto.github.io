@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="AuctionMainCss.css">
+		<link rel = "stylesheet" href="../GoBackToMainPage.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display|Teko&display=swap" rel="stylesheet">
+			<script type="text/javascript" src="jquery-3.4.1.js"></script>
+
+ 
+</head>
+<body>
+	<div id="topHeading">
+		<div class="header">
+			<h3 class="headerInfo" id="phoneNumber">316-111-1111</h3>
+			<h3 class="headerInfo" id="address"><a href="LocationHours.html#map" style="text-decoration: none; color:#154f2a">1234 E. Street</a></h3>
+			<img id="logo" src="WinnipegLogo.png">
+		</div>
+		
+		<h1>Winnipeg Auto Auction</h1>
+
+		<div class="headerNavBar">
+			<ul>
+				<a href="Auction.html" >
+					<li  class="active" class="subText">Public Auction</li>
+				</a>
+				<a href="WeeklyList.html">
+					<li class="notActive" class="subText">Weekly Run List</li>
+				</a>
+				<a href="Contact.html">
+					<li class="notActive" class="subText">Contact Us</li>
+				</a>
+				<a href="LocationHours.html">
+					<li class="notActive" class="subText">Location & Hours</li
+				></a>
+				<a href="Fees.html">
+					<li class="notActive" class="subText">Fees</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<h1 style="margin-top:20px;margin-bottom: 10px;"> About Public Auto Auctions</h1>
+	
+	<div style="margin-bottom: 20px;">
+		<p  class="subText" class="mainPageDescription">Winnipeg Auto Auction is an auto auction open to the public and is located in Winnipeg, OR. Our public car auctions sell vehicles from dealer trade-ins, repossessions, lease ends and more. At Winnipeg Auto Auction we want you to buy with confidence. </p>
+			
+		<p class="subText" class="mainPageDescription" style="margin-top: 25px;" > Feel free to <a href="#">REVIEW OUR CARS ONLINE.</a></p>
+	</div>
+	
+	<button class="runList">VIEW RUN LIST</button>
+	
+	<div class="centeredContainer" style="position:relative; left:0;right:0; margin:auto; margin-top: 20px;">
+		<div class="slideshowContainer">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="https://images.pexels.com/photos/3874329/pexels-photo-3874329.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" >
+			</div>
+			
+			<div class="slideshowText">
+				<h3>Family Operated</h3>
+				<h3>Locally Owned</h3>
+				<h3>Friendly Service</h3>
+				<h3>Knowledgeable</h3>
+			</div>
+
+		<div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+		</div>
+
+
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="bottomBanner">
+			<img id="facebookLike" style="float:left" src="likeUsFB.png">
+			<div class="footerTxt">
+				<p>Winnipeg Auto Auction</p>
+				<p>The only public auction in Winnipeg</p>
+				<p>© 2019 created by Lensflareon</p>
+			</div>
+		</div>
+		</div>
+	
+	
+	
+	<div class="returnToMainPage">
+		<a href="index.html">
+			<p>Return to Main Page</p>
+		</a>
+	</div>
+	
+	
+	
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		};
+	</script>
+		
+</body>
+</html>

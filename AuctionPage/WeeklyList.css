@@ -1,0 +1,48 @@
+h1{
+	padding:10px;
+}
+.saleDate{
+	
+	background-image: url("https://media.istockphoto.com/photos/brushed-metal-sign-with-screws-picture-id160860285");
+		height:130px;
+	width:280px;
+	background-size: cover;
+	background-position: center;
+	display: inline-block;
+	border:8px ridge;
+	margin-top: 26px;
+}
+#pdfTextHolder{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	
+}
+.pdf{
+	margin:10px;
+}
+.saleDate p{
+	font-size: 50px;
+	font-family: Impact, Charcoal, sans-serif;
+	margin-top: 5px;
+	color:white;
+}
+#imageContainer img {
+    width: 20%;
+    height: auto;
+	max-height: 220px;
+  overflow: hidden; 
+	margin:40px;
+}
+@media only screen and (max-width: 620px){
+	#imageContainer{
+		width:100%;
+	}
+	#photoContainer img{
+		width:100%;
+		height:auto;
+	}
+}

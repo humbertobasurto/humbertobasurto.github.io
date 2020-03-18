@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding:0;
+	text-align: center;
+}
+#logo{
+	text-align: center;
+	height:300px;
+}
+#phoneNumber{
+	float:left;
+}
+#address{
+	float:right;
+}
+.headerInfo{
+	width:150px;
+	font-size: 23px;
+	margin:20px;
+	overflow: hidden;
+	
+}
+.headerNavBar li{
+	display: inline-block;
+	list-style-type: none;
+	padding:20px;
+	background-color: darkblue;
+	color:blue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: solid blue 4px;
+	border-bottom: solid blue 4px;
+	transition:.4s;
+	white-space: nowrap;
+
+}
+.headerNavBar ul{
+	white-space: nowrap;
+}
+.headerNavBar li:hover{
+	background-color: blue;
+	transition:.4s;
+	color:white;
+}
+.mainPageDescription{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.runList{
+	padding:30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 17px;
+	border-radius: 25px;
+	border:solid black 3px;
+	font-weight: 800;
+	background-color: white;
+	color:white;
+	
+	background-size: cover;
+	-webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.6); 
+box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.6);
+	transition:.8s;
+	background-color: darkred;
+}
+.runList:hover{
+	background-color: darkgreen;
+	transition:.8s;
+}
+.slideshowContainer{
+	margin-top: 40px;
+	width:100%;
+	height:400px;
+	background-color: aqua;
+	position:realative;
+}
+.slideshowText{
+	left:300px;
+	display: inline-block;
+	position:relative;
+	background-color: white;
+	height:400px;
+	font-size: 30px;
+	-webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  transform: skew(-30deg);
+}
+.slideshowText p{
+	transform:skew(30deg);
+	padding:10px;
+	padding-top: 55px;
+	padding-right: 45px;
+}
+.bottomBanner{
+	height:80px;
+	margin-top: 20px;
+	background-color: darkblue;
+	color:white;
+}
+.bottomBanner img{
+	height:80px;
+}
+.bottomBanner p{
+	margin-top: 10px;
+}

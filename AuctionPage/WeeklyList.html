@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="AuctionMainCss.css">
+		<link rel = "stylesheet" href="../GoBackToMainPage.css">			<link rel="stylesheet" href="WeeklyList.css">
+		<link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display|Teko&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div id="topHeading">
+			<div class="header">
+				<h3 class="headerInfo" id="phoneNumber">316-111-1111</h3>
+				<h3 class="headerInfo" id="address">
+					<a href="LocationHours.html#map" style="text-decoration: none; color:#154f2a">1234 E. Street</a>
+				</h3>
+			<img id="logo" src="WinnipegLogo.png">
+			</div>
+			
+			<h1>Winnipeg Auto Auction</h1>
+
+			<div class="headerNavBar">
+			<ul>
+				<a href="Auction.html"><li class="notActive" class="subText">Public Auction Info</li></a>
+				<a href="WeeklyList.html" ><li class="active" class="subText">Weekly Run List</li></a>
+				<a href="Contact.html"><li class="notActive" class="subText">Contact Us</li></a>
+				<a href="LocationHours.html"><li class="notActive" class="subText">Location & Hours</li></a>
+				<a href="Fees.html"><li class="notActive" class="subText">Fees</li></a>
+			</ul>
+			</div>
+		</div>
+		
+		<h1>WEEKLY RUN LIST</h1>
+		<hr>
+		
+		<div class="saleDate">
+			<p class="subText">SALE DATE</p>
+			<p>03.12.2020</p>
+		</div>
+		
+		<div id="pdfTextHolder">
+			<a style="" class="pdf" href="runlist.pdf">
+				<img src="pdflogo.png" style="width:60px; height:auto">
+			</a>
+			<p  class="subText" class="info" style="padding-top: 24px; font-size: 15px; font-weight: 600">YOU CAN DOWNLOAD THE RUN LIST IN PDF FORMAT BY CLICKING THE ICON TO THE LEFT</p>
+		</div>
+		
+		<h1>WEEKLY RUN LIST PHOTOS</h1>
+		<hr>
+		
+		<div id="photoContainer"></div>
+		
+		<div id="footer">
+			<div class="bottomBanner">
+				<img id="facebookLike" style="float:left" src="likeUsFB.png">
+				<div class="footerTxt">
+					<p>Winnipeg Auto Auction</p>
+					<p>The only public auction in Winnipeg</p>
+					<p>© 2019 created by Lensflareon</p>
+				</div>
+			</div>
+		</div>
+		<div class="returnToMainPage">
+			<a href="index.html">
+				<p>Return to Main Page</p>
+			</a>
+		</div>
+		<script>
+			$("#header").load("Auction.html #topHeading");
+			$("#footer").load("Auction.html #footer");
+			var images=[
+				"https://images.pexels.com/photos/3874337/pexels-photo-3874337.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/3874329/pexels-photo-3874329.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/241316/pexels-photo-241316.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/136872/pexels-photo-136872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/794435/pexels-photo-794435.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/2301220/pexels-photo-2301220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/2301226/pexels-photo-2301226.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/3226806/pexels-photo-3226806.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/2030561/pexels-photo-2030561.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+				"https://images.pexels.com/photos/217326/pexels-photo-217326.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+			];
+			var container=document.getElementById("photoContainer");
+			var docFrag=document.createDocumentFragment();
+
+			images.forEach(function(url, index, originalArray){
+				var img=document.createElement("img");
+				img.src=url;
+				docFrag.appendChild(img);
+			});
+			container.appendChild(docFrag);
+
+		</script>
+	</body>
+</html>

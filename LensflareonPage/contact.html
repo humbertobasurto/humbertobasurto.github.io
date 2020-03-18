@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lensflareon</title>
+	<link rel = "stylesheet" href="lensflareon.css">
+	<link rel = "stylesheet" href="../GoBackToMainPage.css">
+	<script type = "text/javascript" src="lensflareon.js"></script>
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Chathura">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dhurjati">
+          
+</head>
+	<body>
+		<div>
+			<ul class="topNav">
+				<li>
+					<a class="rightNav" href="lensflareon.html"><p class="home">Home</p></a>
+				</li>
+				<li>
+					<a class="rightNav" href="contact.html"><p class="contact">Contact</p></a>
+				</li>
+				<li>
+					<a class="rightNav" href="prints.html" style="border-left: 0px;"><p class="prints">Prints</p></a>
+				</li>
+
+					<a class="headerLink" href="lensflareon.html"><li class="leftNav" style="float:left"></li></a>
+			</ul>
+
+		<div id="container" style=" width:100%;min-width: 300px;">
+			<div class="submitExit"><i id="i" class="fas fa-times fa-lg"></i></div>
+				<form action="/action_page.php" onsubmit="return formValidation()">
+					<input type="text" id="fname" name="firstname" placeholder="First name">
+					
+					<div>
+						<p id="fNameHelp" class="helpingTxt">*testing</p>
+					</div>
+					
+					<input type="text" id="lname" name="lastname" placeholder="Last name">
+
+					<div>
+						<p id="lNameHelp" class="helpingTxt">*testing</p>
+					</div> 
+					
+					<input type="text" id="email" name="emailaddress" placeholder="Email">
+					<div>
+						<p id="emailHelp" class="helpingTxt">*testing</p>
+					</div> 
+					<textarea id="subject" name="subject" placeholder="Your message..." style="height:150px; max-width: 272px; max-height: 280px;"></textarea>
+					<input type="submit" value="Submit">
+				 </form>
+			</div>
+
+
+		</div>
+
+		<div class="returnToMainPage">
+			<a href="index.html"><p>Return to Main Page</p></a>
+		</div>		
+
+	</body>
+</html>

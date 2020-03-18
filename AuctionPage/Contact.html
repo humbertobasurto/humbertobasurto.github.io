@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="AuctionMainCss.css">
+		<link rel = "stylesheet" href="../GoBackToMainPage.css">				<link rel="stylesheet" href="Contact.css">
+		<link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display|Teko&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<script src="https://kit.fontawesome.com/4a57944f16.js" crossorigin="anonymous"></script>	
+
+	</head>
+	<body>
+		<div id="topHeading">
+			<div class="header">
+				<h3 class="headerInfo" id="phoneNumber">316-111-1111</h3>
+				<h3 class="headerInfo" id="address"><a href="LocationHours.html#map" style="text-decoration: none; color:#154f2a">1234 E. Street</a></h3>
+				<img id="logo" src="WinnipegLogo.png">
+			</div>
+			
+			<h1>Winnipeg Auto Auction</h1>
+
+			<div class="headerNavBar">
+				<ul>
+					<a href="Auction.html">
+						<li class="notActive" class="subText">Public Auction Info</li>
+					</a>
+					<a href="WeeklyList.html">
+						<li class="notActive" class="subText">Weekly Run List</li>
+					</a>
+					<a href="Contact.html" >
+						<li class="active" class="subText">Contact Us</li>
+					</a>
+					<a href="LocationHours.html">
+						<li class="notActive" class="subText">Location & Hours</li>
+					</a>
+					<a href="Fees.html">
+						<li class="notActive" class="subText">Fees</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+		
+		<h1>CONTACT US</h1>
+		<hr>
+		<p class="subText">Drop us a line or give us a ring. We would love to hear about your Winnipeg Auto Auction experience and are happy to answer any questions.</p>
+		<div class="contactHolder">
+			<div class="socials">
+				<div class="flexItem">
+					<i class="fas fa-phone-alt fa-3x"></i>
+					<p class="subText" style="padding-top:28px; margin-left: 5px; bottom:0;">316-111-1111</p>
+				</div>
+				<div class="flexItem">
+					<a href="https://www.facebook.com"><i class="fab fa-facebook-f fa-3x"></i></a>
+					<p class="subText"  style="padding-top:28px; 0;margin:0; bottom:0; ">@winnipegauction</p>
+					
+				</div>
+				<div class="flexItem">
+					<a href="https://www.gmail.com"><i class="far fa-envelope fa-3x" style="padding-top: 5px;"></i></a>
+					<p class="subText"  style="padding-top:28px; 0;margin:0; bottom:0;margin-left: 5px;">WinnipegAuction@email.com</p>
+				</div>
+			
+			</div>
+			
+			<h1>Send us a messsage</h1>
+			<hr>
+			
+			<div class="leaveAMessage">
+				<form>
+					<label style="float: left; padding:0;marign:0">Name</label><br>
+					<input type="text" id="name" class="contactInput" name="name" ><br><br>
+					<label style="float: left;">Email</label><br>
+					<input  type="text" id="email" class="contactInput" name="email" ><br><br>
+					<label style="float: left;">Message</label>
+					<input type="text" id="message" class="contactInput"  name="message" ><br><br>
+					
+					<button style="margin-top: 5px;">Send</button>
+				
+				</form>
+				
+			</div>
+		</div>
+		<div id="footer">
+			<div class="bottomBanner">
+				<img id="facebookLike" style="float:left" src="likeUsFB.png">
+				<div class="footerTxt">
+				<p>Winnipeg Auto Auction</p>
+				<p>The only public auction in Winnipeg</p>
+				<p>© 2019 created by Lensflareon</p>
+				</div>
+			</div>
+		</div>
+		<div class="returnToMainPage">
+			<a href="index.html">
+				<p>Return to Main Page</p>
+			</a>
+		</div>
+		
+		
+		<script>
+		$(document).ready(function(){ 
+			$("#header").load("Auction.html #topHeading");
+			$("#footer").load("Auction.html #footer");
+		});
+		</script>
+	</body>
+</html>

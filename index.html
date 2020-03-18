@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HumbertoBasurtoVilla</title>
+		<link rel = "stylesheet" href="Portfolio.css">
+		<link rel = "stylesheet" href="GoBackToMainPage.css">
+		<script type = "text/javascript" src="Portfolio.js"></script>
+		<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Chathura">
+		<link rel="stylesheet"
+			  href="https://fonts.googleapis.com/css?family=Dhurjati">
+		<script src="https://kit.fontawesome.com/4a57944f16.js" crossorigin="anonymous"></script>	
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div class="intro">
+			<div class="socials">
+				<a class="socialLinks" href="https://www.linkedin.com/in/humbas/">	<i class="fab fa-linkedin fa-lg"></i>
+				</a>
+				<a class="socialLinks" href="https://github.com/humbertobasurto">	<i class="fab fa-github fa-lg"></i>
+				</a>
+			</div>
+			
+			<div class="headingContainer">
+				<h2>Humberto Basurto-Villa.</h2>
+				<h2>Front-end Web Developer.</h2>
+				<h5>Here is some of my work:</h5>
+				
+			</div>
+			
+			
+		</div>
+		<h5 class="midHeading">Front-End Web Development:</h5>
+		<div class="portfolioLinkContainer">
+			<div id="image1" class="portfolioLinkItem">
+				<div class="imgtext">
+					<p style="font-family:Optima, sans-serif">Lensflareon</p>
+				</div>
+				<div class="imgtext2">
+					<a href="#">
+						<p>Project Description<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+				<div class="imgtext3">
+					<a href="lensflareon.html">
+						<p>Visit website demo<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+			</div>
+					
+			<div id="image2" class="portfolioLinkItem">
+				<div class="imgtext">
+					<p style="font-family:Optima, sans-serif">Winnipeg Auction</p>
+				</div>
+				<div class="imgtext2">
+					<a href="Auction.html">
+						<p>Project Description<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+				<div class="imgtext3">
+					<a href="AuctionPage/Auction.html">
+						<p>Visit website demo<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+			</div>
+					
+			<div id="image3" class="portfolioLinkItem">
+			<div class="imgtext">
+				<p style="font-family:Optima, sans-serif">Shuffle Playlist</p>
+			</div>
+			<div class="imgtext2">
+				<a href="#">
+					<p>Project Description<i class="fas fa-external-link-alt fa-sm"></i></p>
+				</a>
+			</div>
+				<div class="imgtext3">
+					<a href="Album.html">
+						<p>Visit website demo<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<h5 class="midHeading">Data Analysis:</h5>
+		<div class="portfolioLinkContainer">
+				
+			<div id="image4" class="portfolioLinkItem">
+				<div class="imgtext">
+					<p style="font-family:Optima, sans-serif">Loan Data</p>
+				</div>
+				<div class="imgtext2">
+					<a href="https://github.com/humbertobasurto/Loan_data"><p>Project Description<i class="fas fa-external-link-alt fa-sm"></i></p></a>
+				</div>
+				<div class="imgtext3">
+					<a href="https://github.com/humbertobasurto/Loan_data/blob/master/LoanData.ipynb">
+						<p>Visit Project Demo<i class="fas fa-external-link-alt fa-sm"></i>
+						</p>
+					</a>
+				</div>
+			</div>
+					
+			<div id="image5" class="portfolioLinkItem">
+				<div class="imgtext">
+					<p style="font-family:Optima, sans-serif">Bitcoin Volatility</p>
+				</div>
+				<div class="imgtext2">
+					<a href="https://github.com/humbertobasurto/Bitcoin_Volatility">	<p>Project Description<i class="fas fa-external-link-alt fa-sm"></i>
+						</p>
+					</a>
+				</div>
+				<div class="imgtext3">
+					<a href="https://github.com/humbertobasurto/Bitcoin_Volatility/blob/master/notebook.ipynb">
+						<p>Visit Project Demo<i class="fas fa-external-link-alt fa-sm"></i></p>
+					</a>
+				</div>
+			</div>
+			
+			</div>
+		
+					
+		
+		<div id="containerWrapper">
+			<div id="container">
+				
+				<div class="submitExit">
+					<i id="i" class="fas fa-times fa-lg"></i>
+				</div>
+				
+				
+				<form action="#" id="form" method="#" name="form" onsubmit="return formValidation()">
+				<input type="text" 
+					   id="fname" 
+					   name="firstname" 
+					   onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="First name">
+				  <div>
+					  <p id="fNameHelp" class="helpingTxt">*testing</p>
+				  </div>
+				  
+				<input type="text" 
+					   id="lname" 
+					   name="lastname" 
+					   onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Last name">
+				  <div>
+					  <p id="lNameHelp" class="helpingTxt">*testing</p>
+				  </div> 
+				  
+				<input type="text" 
+					   id="email" 
+					   name="emailaddress" 
+					   placeholder="Email">
+				  <div>
+					  <p id="emailHelp" class="helpingTxt">*testing</p>
+				  </div> 
+				  
+				<textarea id="subject" 
+						  name="subject" 
+						  placeholder="Your message..." 
+						  style="height:150px; max-height: 250px"></textarea>
+
+				<input id="send" name="submit" type="submit" value="Send Feedback">
+			  </form>
+				
+				
+			</div>
+		</div>
+		<div id="floatingContactButton">
+			<button id="button">Contact</button>
+		</div>
+		<div class="copyright">©2020 Humberto Basurto-Villa, Lensflareon. All Rights Reserved.</div>
+		
+			
+<script>
+	function formValidation(){
+	var userEmail=
+		document.getElementById("email").value;
+	var firstName = 
+		document.getElementById("fname").value;
+	var lastName=
+		document.getElementById("lname").value;
+	submitOK=true;
+		
+	function isEmailValid(Email){
+		return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email);
+	}
+		if(firstName.length > 14){
+			document.getElementById("fNameHelp").style.visibility="visible";
+			document.getElementById("fNameHelp").innerHTML="*First name must be under 14 characters.";
+			//document.getElementById("button").style.visibility="hidden";
+			
+			submitOK=false;
+		}else if(firstName.length == ""){
+			document.getElementById("fNameHelp").style.visibility="visible";
+			document.getElementById("fNameHelp").innerHTML="*First name cannot be blank.";
+			submitOK=false;
+			
+		}else{
+		
+			document.getElementById("fNameHelp").innerHTML="";
+		}
+		if(lastName.length > 14){
+			document.getElementById("lNameHelp").style.visibility="visible";
+			document.getElementById("lNameHelp").innerHTML="*Last name must be under 14 characters.";
+			submitOK=false;
+		}else if(lastName.length == ""){
+			document.getElementById("lNameHelp").style.visibility="visible";
+			document.getElementById("lNameHelp").innerHTML="*Last name cannot be blank.";
+			submitOK=false;
+		}else{
+			document.getElementById("lNameHelp").innerHTML="";
+		}
+		
+		if(isEmailValid(userEmail)==false){
+			document.getElementById("emailHelp").style.visibility="visible";
+			document.getElementById("emailHelp").innerHTML="*Invalid Email.";
+			submitOK=false;
+		}else{
+			document.getElementById("emailHelp").innerHTML="";
+		}
+		if(submitOK==false){
+			return false;
+		}
+	}
+	
+	
+	
+	//clicking button makes contact button disappear and contact form appear hitting
+	//the "x" button on contact form hides form, sets input fields to "" and
+	//displays contact button
+document.getElementById("i").addEventListener("click", myFunction);
+function myFunction(){
+	document.getElementById("container").style.display="none";
+	document.getElementById("button").style.visibility="visible";
+	
+	const elementsList = document.querySelectorAll("#fname, #lname, #email, #subject");
+	const elementsArray=[...elementsList];
+	elementsArray.forEach(element=>{element.value="";})
+	
+	const helpElementsList = document.querySelectorAll( "#fNameHelp, #lNameHelp, #emailHelp");
+	const helpElementsArray=[...helpElementsList];
+	helpElementsArray.forEach(element=>{element.innerHTML="";})
+	
+};
+	
+document.getElementById("button").addEventListener("click", myFunction2);
+function myFunction2(){
+	document.getElementById("container").style.display="inline-block";
+	document.getElementById("button").style.visibility="hidden";
+	
+	
+	// example => $('#someID').html("<p>Hello, <b>World</b>!</p>");
+};
+	
+
+</script>
+	
+	</body>
+</html>

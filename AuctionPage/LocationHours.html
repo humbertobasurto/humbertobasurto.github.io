@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="AuctionMainCss.css">		
+		<link rel = "stylesheet" href="../GoBackToMainPage.css">
+		<link href="https://fonts.googleapis.com/css?family=Hind|Playfair+Display|Teko&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	</head>
+	<body>
+		<div id="topHeading">
+			<div class="header">
+				<h3 class="headerInfo" id="phoneNumber">316-111-1111</h3>
+				<h3 class="headerInfo" id="address"><a href="LocationHours.html#map" style="text-decoration: none; color:#154f2a">1234 E. Street</a></h3>
+				<img id="logo" src="WinnipegLogo.png">
+			</div>
+			
+			<h1>Winnipeg Auto Auction</h1>
+
+			<div class="headerNavBar">
+				<ul>
+					<a href="Auction.html">
+						<li class="notActive" class="subText">Public Auction Info</li>
+					</a>
+					<a href="WeeklyList.html">
+						<li class="notActive" class="subText">Weekly Run List</li>
+					</a>
+					<a href="Contact.html">
+						<li class="notActive" class="subText">Contact Us</li>
+					</a>
+					<a href="LocationHours.html" >
+						<li class="active" class="subText">Location & Hours</li>
+					</a>
+					<a href="Fees.html">
+						<li class="notActive" class="subText">Fees</li>
+					</a>
+				</ul>
+			</div>
+		</div>	
+			<h1>LOCATION & HOURS</h1>
+			<hr>
+		<div class="gridContainer">
+		
+		
+		</div>
+		
+		<h1>AUCTIONS ARE HELD EVERY FRIDAY AT 7:30PM AND END WHEN THE AUCTION IS DONE</h1>
+		
+		<div class="mapCenter" >
+			<div id="map"></div>
+		</div>
+		
+		
+		
+		
+		<div id="footer">
+			<div class="bottomBanner">
+				<img id="facebookLike" style="float:left" src="likeUsFB.png">
+				<div class="footerTxt">
+					<p>Winnipeg Auto Auction</p>
+					<p>The only public auction in Winnipeg</p>
+					<p>© 2019 created by Lensflareon</p>
+				</div>
+			</div>
+		</div>
+		<div class="returnToMainPage">
+			<a href="index.html"><p>Return to Main Page</p></a>
+		</div>
+		
+		<script>
+			function initMap(){
+				var winnipeg = {lat:34.261433, lng:	-118.802167};
+				var map =new google.maps.Map(
+				document.getElementById('map'), {zoom:4, center:winnipeg});
+				marker = new google.maps.Marker({position:winnipeg, map:map});
+			}
+		</script>
+		<script async defer
+				    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+		</script>
+	</body>
+</html>

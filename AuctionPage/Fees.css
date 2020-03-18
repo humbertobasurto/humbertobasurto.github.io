@@ -1,0 +1,79 @@
+h1{
+	padding:10px;
+}
+.tables{
+	height:440px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: row wrap;
+}
+
+.table1Holder{
+	float:left;
+	margin-left:20px;
+	margin-right: 10px;
+
+}
+.table2Holder{
+	float:right;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+	margin-bottom: 20px;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+}
+.columnTitle{
+	background-color: indianred
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.tableData:hover{
+	background-color: #154f2a;
+	color:white;
+}
+
+h2{
+	padding:20px;
+	padding-bottom: 12px;
+}
+@media only screen and (max-width: 650px){
+	.table1Holder{
+	float:none;
+	margin:auto;
+
+}
+.table2Holder{
+	float:none;
+	margin: auto;
+}
+	.tables{
+		display: block;
+	
+	}
+	#footer{
+		margin-top: 450px;
+	}
+	h3{
+		display:block;
+		float: none;
+	}
+	#address{
+		width:auto;
+	}
+	#phoneNumber{
+		width:auto;
+	}
+}

@@ -1,0 +1,409 @@
+body, html{
+	margin:0;
+	padding:0;
+	height:100%;
+	background-size: 100%;
+
+}
+#body{
+	margin:0;
+	padding:0;
+	z-index: 0;
+	
+}
+
+
+/*/////////////////////////////////////////////////////////
+////////////////----Heading-----////////////////////////
+///////////////////////////////////////////////////////////*/
+.topNav{
+	list-style-type: none;
+	background-color: white;
+	margin:0px;
+	padding:0px;
+	border-bottom: solid 2px red;
+	height:49px;
+	overflow: hidden;
+}
+
+.rightNav{
+	display: block;
+	color: black;
+	font-family: Dhurjati;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	padding:6px;
+	margin:0;
+	border-left: 2px solid red;
+	float:right;
+    
+}
+
+.rightNav:hover{
+	background-color: #8c5034;
+	
+}
+
+.contact{
+	padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,orange, red);*/
+    background:orange;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home{
+    padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,red, gold);*/
+    background:red;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+.prints{
+
+	padding:0;
+	margin:0;
+	/*background: -webkit-linear-gradient(left,yellow, orange);*/
+    background:#f9f86b;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.leftNav{
+	padding:0;
+	margin:0;
+	margin-left: 10px;
+	border:0;
+	background-image: url("Lensflareon.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width:156px;
+	height:60px;
+}
+.headerLink{
+
+	color:white;
+	padding:0;
+	margin:0;
+	border:0;
+	
+	}
+
+.headerImg{
+
+	padding-left: 10px;
+	height:49px;
+}
+/*/////////////////////////////////////////////////////////
+////////////////----Navigation Bar-----////////////////////////
+///////////////////////////////////////////////////////////*/
+.container{
+
+
+}
+.navBar {
+display:block;
+float:right;
+text-overflow: ellipsis;
+white-space: nowrap;
+width:25%;
+height: 60%;
+
+}
+.navBarLink {
+float:right;
+display: block; /* Make the buttons appear below each other */
+text-decoration: none;
+color:red;
+font-family:'Chathura';
+font-size: 32px;
+background-color:#ffffffb0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+margin-bottom: 4%;
+margin-top: 4%;
+padding-top: 1%;
+padding-bottom: 1%;
+padding-left: 9%;
+padding-right: 6%;
+border:solid 2px #8c5034;
+border-right: 0;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+width:100%;
+transition: width .5s;
+}
+.centeredCaption{
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	width:300px;
+	height:120px;
+	background-color: rgba(255,255,255,.7);
+	padding:10px;
+	visibility: hidden;
+
+}
+.centeredCaption p{
+	text-align: center;
+	padding:0;
+	margin:0;
+	border:solid #8c5034;
+}
+
+
+
+/* Add a background color on hover */
+.navBarLink:hover {
+cursor: pointer;
+background-color:#ffffffe6;
+width:170%;
+	border:solid 2px #ae6e50;
+}
+/*/////////////////////////////////////////////////////////
+////////////////-------Background Images--------//////////////////////////
+///////////////////////////////////////////////////////////*/
+
+.imageContainer{
+    position:fixed;
+    width:100%;
+    height: 100%;
+    background:lightgray;
+    z-index: -1;
+    text-align: center;
+	
+}
+
+.image{
+    
+    
+}
+#image0{
+    background:url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     background-repeat: no-repeat;
+    visibility: hidden;
+
+
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+    visibility: visible;
+
+}
+#image1{
+    background:url("Bee.jpg");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     background-repeat: no-repeat;
+    visibility: hidden;
+
+}
+#image2{
+    background:url("Butterfly.jpg");
+   
+    height:100%;
+    width:100%;
+	background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    visibility: hidden;
+
+}
+#image3{
+    background:url("Boat.jpg");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     background-repeat: no-repeat;
+    visibility: hidden;
+
+}
+#image4{
+    background:url("Droplet.jpg");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     background-repeat: no-repeat;
+	visibility: hidden;
+}
+#image5{
+    background:url("Flowertree.jpg");
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+     background-repeat: no-repeat;
+    visibility: hidden;
+}
+/*/////////////////////////////////////////////////////////
+////////////////-------Page Slide Transition--------//////////////////////////
+///////////////////////////////////////////////////////////*/
+.wrapper{
+    position:relative;
+}
+#Slide{
+    position:absolute
+    left:-500px;
+    transition:1s;
+    
+}
+
+.wrapper:hover #Slide{
+    transition:1s;
+    left:0;
+	
+}
+
+#imageDescription{
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	width:300px;
+	height:120px;
+	background-color: rgba(255,255,255,.7);
+	padding:10px;
+	z-index: -1;
+	
+}
+#imageDescription p{
+	text-align: center;
+	padding:0;
+	margin:0;
+	border:solid #8c5034;
+}
+
+@media only screen and (max-width: 800px) {
+  .navBarLink:hover {
+cursor: pointer;
+background-color:#ffffffe6;
+width:270%;
+}
+	
+}
+@media only screen and (max-width: 360px){
+	#imageDescription{
+display: none;}
+	.centeredCaption{
+		display: none;
+	}
+	#homeNav{
+		border-left: 0px;
+	}
+	
+	.navBarLink{
+		width:200%;
+	}
+	.navBarLink:hover{
+		width:450%;
+	}
+	.leftNav{
+		display:none;
+	}
+	.headerLink{
+		display:none;
+	}
+	.topNav{
+		display:flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-direction: row-reverse;
+		width:100%;
+	
+	}
+	.topNav li{
+		display:block;
+	}
+	
+	.border{
+		border:2px solid red;
+		border-bottom: none;
+		border-top: none;
+	}
+	
+}
+
+#container {
+	
+	position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+
+	margin: 0 auto;
+	width:40%;
+  max-width:400px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+	
+}
+form{
+	padding:5px;
+	margin-bottom: 15px;
+}
+input{
+	padding:5px;
+	margin-bottom:px;
+}
+textarea{
+	padding:5px;
+	margin-bottom: 15px;
+}
+
+.helpingTxt{
+	padding:0;
+	margin:0;
+	margin-bottom: 10px;
+	margin-top: -10px;
+	color:red;
+	font-size: 12px;
+	
+}
+#fNameHelp{
+	visibility:hidden;
+	
+}
+#lNameHelp{
+	visibility:hidden;
+	
+}
+
+#emailHelp{
+	visibility:hidden;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
