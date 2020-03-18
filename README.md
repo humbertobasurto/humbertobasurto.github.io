@@ -11,6 +11,7 @@ Presentation:Github Pages
 References and Images: Pexels, W3Schools, MDN, CodeAcademy, CodeCamp, StackOverflow, The Coding Train, Corey Schafer
 
 Dataset:DataCamp
+
 This is a website I have from scratch, with no help from things like Bootstrap or similar to teach myself how to code and work 
 on front end development. I used CSS, HTML, Javascript, Jquery, some Php(not currently fully functional) google API, css grid and flexbox and 
 many google searches and and late nights to be able to complete my vision(partially). I will be updating my website and the projects
