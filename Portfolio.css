@@ -112,6 +112,10 @@ background-size: 115%;
 	background-image: url("/PortfolioMedia/BitcoinDataStill.png");
 	background-size: 115%;
 }
+#image6{
+	background-image: url("PortfolioMedia/COVID-19.png");
+	background-size: 115%;
+}
 #image1:hover, #image2:hover, #image3:hover, #image4:hover, #image5:hover{
 	
 	background-size: 125%;
@@ -130,6 +134,10 @@ background-size: 115%;
 }
 #image5:hover{
 	background-image: url("/PortfolioMedia/BitcoinDataStill.png");
+}
+#image6:hover{
+	background-image: url("PortfolioMedia/COVID-19.png");
+	background-size: 125%;
 }
 
 .imgtext {
