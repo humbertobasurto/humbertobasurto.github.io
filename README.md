@@ -1,6 +1,6 @@
 # humbertobasurto.github.io
 
-Language: CSS, HTML(hotly debated), Javascript, Php
+Language: CSS, HTML, Javascript, Php
 
 API's: FontAwesome, Google Maps, Spotify
 
